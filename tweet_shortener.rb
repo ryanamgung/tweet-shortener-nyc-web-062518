@@ -16,5 +16,6 @@ end
 
 def word_substituter(tweet)
   tweet.split(" ")
+  shortcuts = dictionary.keys
   
 end
