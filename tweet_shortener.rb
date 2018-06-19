@@ -18,10 +18,8 @@ def word_substituter(tweet)
   array = tweet.split(" ")
   bad_words = dictionary.keys
   array.map do |word|
-    bad_words.map do |compare|
-      if word.downcase == compare
-        word = dictionary[word.downcase]
-      end
+    if bad_words.include?(word)
+      word = dictionary[word.downcase]
     end
   end
   array.join(" ")
