@@ -19,7 +19,7 @@ def word_substituter(tweet)
   bad_words = dictionary.keys
   array.map do |word|
     bad_words.each do |compare|
-      if word == compare
+      if word.downcase == compare
         word = 
       end
     end
