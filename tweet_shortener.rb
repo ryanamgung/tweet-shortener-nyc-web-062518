@@ -1,6 +1,6 @@
 # Write your code here.
 def dictionary
- dictionary = {
+ {
   "hello" => "hi",
   "to" => "2",
   "two" => "2",
@@ -15,6 +15,7 @@ def dictionary
 end
 
 def word_substituter(tweet)
+  output = []
   array = tweet.split(" ")
   bad_words = dictionary.keys
   array.map do |word|
