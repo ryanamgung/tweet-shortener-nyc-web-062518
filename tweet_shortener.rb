@@ -16,9 +16,13 @@ end
 
 def word_substituter(tweet)
   array = tweet.split(" ")
-  shortcuts = dictionary.keys
+  bad_words = dictionary.keys
   array.map do |word|
-    shortcuts.each do |shortened|
+    bad_words.each do |compare|
+      if word == compare
+        word = 
+      end
+    end
   end
   
 end
