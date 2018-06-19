@@ -15,7 +15,10 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  tweet.split(" ")
+  array = tweet.split(" ")
   shortcuts = dictionary.keys
+  array.map do |word|
+    shortcuts.each do |shortened|
+  end
   
 end
